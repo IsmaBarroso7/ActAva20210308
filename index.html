@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estil.css">
     <link rel="stylesheet" href="./css/actAva_IBB.css">
-    <title>Examen</title>
+    <title>EXAMEN ISMAEL BARROSO BORRELL DAW2</title>
   </head>
   <body>
     <main>
-      <article>
+      
+      <article class="elementVisibleIBB" id="pregunta1IBB">
         <span class="titol negre">MP06 - UF03<br>Activitat avaluativa</span>
         <span class="subtitolText blanc">dilluns, 8 de març de 2021</span>
-        <div class="espaiEntrebotonsIBB">
-          <button class="boto inactiu" disabled onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu" onclick="mostraAlerta();">Següent &gt;&gt;</button>
+        <div class="botons botonsIBB">
+          <button class="boto actiu" onclick="passaAnteriorIBB(this);">&lt;&lt;&nbsp;Anterior</button>
+          <button class="boto actiu " onclick="passaSeguentIBB(this)">Següent &gt;&gt;</button>
         </div>
       </article>
       <article id="enunciat_1" class="elementOcultIBB">
@@ -32,17 +33,18 @@
               <p id="llistaElements"></p>
             </div>
           </div>
-          <div class="barraBotonsPetits" >
+          <div class="barraBotonsPetits">
             <button class="boto actiu" type="button" onclick="afegirElementAColleccio()">Afegir element</button>
             <button class="boto actiu" type="button" onclick="mostrarElementsDeLaColleccio()">Mostra elenments</button>
             <button class="boto actiu" type="button" id="neteja" value="neteja" onclick="netejaColleccio()">Neteja Col·lecció</button>
           </div>
         </div>
-        <div class="espaiEntrebotonsIBB">
-          <button class="boto actiu" onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu" onclick="mostraAlerta();">Següent&nbsp;&gt;&gt;</button>
+        <div class="botons botonsIBB">
+          <button class="boto actiu" onclick="passaAnteriorIBB(this);">&lt;&lt;&nbsp;Anterior</button>
+          <button class="boto actiu " onclick="passaSeguentIBB(this)">Següent &gt;&gt;</button>
         </div>
       </article>
+
       <article id="enunciat_2" class="elementOcultIBB">
         <span class="subtitol negre">Exercici 2</span>
         <div>
@@ -66,7 +68,7 @@
             <button class="boto actiu" type="button" onclick="producte()">Producte</button>
             <button class="boto actiu" type="button" onclick="divisio()">Divisió</button>
           </div>
-          <div class="enunciat" class="elementOcultIBB">
+          <div class="enunciat">
             <p>Resultat:</p>
           </div>
             <label class="opcio col1">
@@ -74,15 +76,15 @@
             </label>
           </div>
         </div>
-        <div class="espaiEntrebotonsIBB">
-          <button class="boto actiu" onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu" onclick="mostraAlerta();">Següent&nbsp;&gt;&gt;</button>
+        <div class="botons botonsIBB">
+          <button class="boto actiu" onclick="passaAnteriorIBB(this);">&lt;&lt;&nbsp;Anterior</button>
+          <button class="boto actiu " onclick="passaSeguentIBB(this)">Següent &gt;&gt;</button>
         </div>
       </article>
     </main>
 
     <script src="./js/actAva_IBB.js"></script>
-    <script src="../js/matrius.js"></script>
-    <script src="../js/operacions.js"></script>
+    <script src="./js/matrius.js"></script>
+    <script src="./js/operacions.js"></script>
   </body>
 </html>
