@@ -1,0 +1,13 @@
+
+.espaiEntrebotonsIBB {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .elementOcultIBB {
+  display: none;
+}
+
+.elementVisibleIBB {
+  display: flex;
+}
