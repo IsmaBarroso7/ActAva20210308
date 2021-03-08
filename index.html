@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estil.css">
-    <link rel="stylesheet" href="./css/actAva_IBB.css">
+    <link rel="stylesheet" href="style/estil.css">
+    <link rel="stylesheet" href="css/Activitat.css">
     <title>Examen</title>
   </head>
   <body>
+    <header>
+    </header>
     <main>
-      <article>
+
+      <article id="pregunta-01-tx" class="elementVisibleIBB">
         <span class="titol negre">MP06 - UF03<br>Activitat avaluativa</span>
-        <span class="subtitolText blanc">dilluns, 8 de març de 2021</span>
-        <div class="espaiEntrebotonsIBB">
+        <span class="subtitol vermell">8 de febrer de 2021</span>
+        <div class="botons">
           <button class="boto inactiu" disabled onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu" onclick="mostraAlerta();">Següent &gt;&gt;</button>
+          <button class="boto actiu" onclick="passaSeguentIBB(this)">Següent &gt;&gt;</button>
         </div>
       </article>
+
+
+
       <article id="enunciat_1" class="elementOcultIBB">
         <span class="subtitol negre">Exercici 1</span>
         <div>
@@ -32,17 +38,22 @@
               <p id="llistaElements"></p>
             </div>
           </div>
-          <div class="barraBotonsPetits" >
+          <div class="barraBotonsPetits">
             <button class="boto actiu" type="button" onclick="afegirElementAColleccio()">Afegir element</button>
             <button class="boto actiu" type="button" onclick="mostrarElementsDeLaColleccio()">Mostra elenments</button>
             <button class="boto actiu" type="button" id="neteja" value="neteja" onclick="netejaColleccio()">Neteja Col·lecció</button>
           </div>
+
         </div>
-        <div class="espaiEntrebotonsIBB">
-          <button class="boto actiu" onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu" onclick="mostraAlerta();">Següent&nbsp;&gt;&gt;</button>
+        <div class="botons">
+          <button class="boto actiu" onclick="passaAnteriorIBB(this)">&lt;&lt;&nbsp;Anterior</button>
+          <button class="boto actiu" onclick="passaSeguentIBB(this)">Següent &gt;&gt;</button>
         </div>
       </article>
+
+
+
+
       <article id="enunciat_2" class="elementOcultIBB">
         <span class="subtitol negre">Exercici 2</span>
         <div>
@@ -53,6 +64,7 @@
             <label class="opcio col1">
               <input type="text" id="primerNombre" placeholder="Entra el nombre 1!" />
             </label>
+            
           <div class="enunciat">
             <p>Nombre 2:</p>
           </div>
@@ -66,7 +78,7 @@
             <button class="boto actiu" type="button" onclick="producte()">Producte</button>
             <button class="boto actiu" type="button" onclick="divisio()">Divisió</button>
           </div>
-          <div class="enunciat" class="elementOcultIBB">
+          <div class="enunciat">
             <p>Resultat:</p>
           </div>
             <label class="opcio col1">
@@ -74,15 +86,17 @@
             </label>
           </div>
         </div>
-        <div class="espaiEntrebotonsIBB">
-          <button class="boto actiu" onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
+        <div class="botons">
+          <button class="boto actiu" onclick="passaAnteriorIBB(this);">&lt;&lt;&nbsp;Anterior</button>
           <button class="boto actiu" onclick="mostraAlerta();">Següent&nbsp;&gt;&gt;</button>
         </div>
       </article>
     </main>
-
-    <script src="./js/actAva_IBB.js"></script>
-    <script src="../js/matrius.js"></script>
-    <script src="../js/operacions.js"></script>
+      
+    <script src="js/examen.js"></script>
+    <script src="js/matrius.js"></script>
+    <script src="js/operacions.js"></script>
+    <script src="js/seguentBarrosoIsmael.js"></script>
+    <script src="js/anteriorBarrosoIsmael.js"></script>
   </body>
 </html>
